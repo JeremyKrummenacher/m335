@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./objekte.page.scss'],
 })
 export class ObjektePage implements OnInit {
-  person: any = { name : 'Muster', vorname : 'Max' };
+  person: Person = { name : 'Muster', vorname : 'Max' };
   constructor() { }
 
   ngOnInit() {
   }
+
+}
+interface Person {
+  name: string;
+  vorname: string;
 }

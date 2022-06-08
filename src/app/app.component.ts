@@ -8,10 +8,12 @@ export class AppComponent {
   public appPages = [
     { title: 'Navigation', url: '/navigation', icon: 'compass' },
     { title: 'Navigation-Detail', url: '/navigation-detail', icon: 'navigate' },
-    { title: 'Zahlen', url: '/zahlen', icon: 'number' },
-    { title: 'String', url: '/string', icon: 'string' },
-    { title: 'Objekte', url: '/objekte', icon: 'object' },
-    { title: 'Array', url: '/array', icon: 'array' },
+    { title: 'Zahlen', url: '/zahlen', icon: 'apps' },
+    { title: 'String', url: '/string', icon: 'beer' },
+    { title: 'Objekte', url: '/objekte', icon: 'cube' },
+    { title: 'Array', url: '/array', icon: 'albums' },
+    { title: 'DataBinding', url: '/data-binding', icon: 'analytics' },
+    { title: 'Rechner', url: '/rechner', icon: 'calculator' },
 
   ];
   constructor() {}
