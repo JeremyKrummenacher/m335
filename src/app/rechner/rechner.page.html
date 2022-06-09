@@ -56,15 +56,17 @@
     </ion-col>
   </ion-row>
   <ion-row>
-    <ion-col>
+    <ion-col offset-4>
       <ion-button shape="round" expand="full" (click)="pushDataText('0')">0</ion-button>
     </ion-col>
-    <ion-col>
-      <ion-button shape="round" expand="full" (click)="pushDataText('.')">.</ion-button>
-    </ion-col>
-    <ion-col>
-      <ion-button shape="round" expand="full" color="warning" (click)="getResult()">=</ion-button>
-    </ion-col>
+    <ion-row>
+      <ion-col>
+        <ion-button shape="round" expand="full" (click)="pushDataText('.')">.</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button shape="round" expand="full" color="warning" (click)="getResult()">=</ion-button>
+      </ion-col>
+    </ion-row>
   </ion-row>
   <ion-row>
     <ion-col>
