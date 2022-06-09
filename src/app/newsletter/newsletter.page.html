@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Newsletter</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-img src="../../assets/newsletter.jpg"></ion-img>
+  <h2>Jetzt an unserem Newsletter anmelden</h2>
+  <form [formGroup]="contactForm" (ngSubmit)="sendContactForm()">
+    <ion-item>
+      <ion-label position="floating">Email <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input required formControlName="email" type="email"></ion-input>
+    </ion-item>
+    <ion-button block color="primary" type="submit" [disabled]="contactForm.invalid">
+      Anmelden
+    </ion-button>
+  </form>
+</ion-content>
