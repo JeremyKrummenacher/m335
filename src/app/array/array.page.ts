@@ -1,3 +1,4 @@
+import { AlertController } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -12,9 +13,40 @@ export class ArrayPage implements OnInit {
     {name:'Apfel', imgURL: 'https://www.swissfruit.ch/wp-content/uploads/2021/06/primerouge.jpg'}
   ];
 
-  constructor() { }
+  constructor(public alertController: AlertController) { }
 
   ngOnInit() {
+  }
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      cssClass: 'my-custom-class',
+      header: 'Neue Frucht',
+      inputs: [{
+        name: 'frucht',
+        type: 'text',
+        placeholder: 'Frucht'
+      },
+      {
+        name: 'imageUrl',
+        type: 'text',
+        placeholder: 'imageUrl'
+      }
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+        }, {
+          text: 'Ok',
+          role: 'ok',
+          handler: data => {
+            this.fruechte.push(data.frucht);
+          }
+        }
+      ],
+    });
+    await alert.present();
   }
 
 }

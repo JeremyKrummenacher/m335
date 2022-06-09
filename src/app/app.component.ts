@@ -14,6 +14,8 @@ export class AppComponent {
     { title: 'Array', url: '/array', icon: 'albums' },
     { title: 'DataBinding', url: '/data-binding', icon: 'analytics' },
     { title: 'Rechner', url: '/rechner', icon: 'calculator' },
+    { title: 'Alerts', url: '/alerts', icon: 'alert' },
+
 
   ];
   constructor() {}

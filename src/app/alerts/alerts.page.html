@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Alerts</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button color="primary" (click)="presentAlert()">Nickname erfassen</ion-button> <br>
+  <ion-label *ngIf="canbeseen">Ich liebe es {{nickname}} gennant zu werden</ion-label> <br>
+  <ion-button color="dark" (click)="press()">press me</ion-button> <br>
+
+  <p>Counter: {{counter}}</p>
+
+</ion-content>
