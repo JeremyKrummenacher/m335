@@ -16,7 +16,8 @@ export class AppComponent {
     { title: 'Rechner', url: '/rechner', icon: 'calculator' },
     { title: 'Alerts', url: '/alerts', icon: 'alert' },
     { title: 'Newsletter', url: '/newsletter', icon: 'letter' },
-
+    { title: 'storage', url: '/storage', icon: 'cloud' },
+    { title: 'chat', url: '/chat', icon: 'chatbubble' },
 
   ];
   constructor() {}
